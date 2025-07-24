@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Stream</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    .video-section {
+      width: 70%;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-section img {
+      width: 100%;
+      height: auto;
+    }
+
+    .alert-section {
+      width: 30%;
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-left: 2px solid #ccc;
+    }
+
+    .alert {
+      background-color: #ffe6e6;
+      border: 1px solid red;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-section">
+    <img src="http://localhost:5001/video_feed" alt="Live Video">
+  </div>
+
+  <div class="alert-section">
+    <h2>Alerts</h2>
+    <div class="alert">No intrusions detected.</div>
+    <!-- Add more alerts dynamically -->
+  </div>
+</body>
+</html>
